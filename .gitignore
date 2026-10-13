@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.coverage
+.pytest_cache/
+# Downloaded word list (see README)
+word conjugation/words_alpha.txt
