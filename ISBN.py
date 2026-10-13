@@ -5,7 +5,8 @@ def ISBN(digits):
             counter += int(digits[i])
         else:
             counter += int(digits[i]) * 3
-    DigitTwelth = 10 - counter%10
+    # mod 10 again so a sum ending in 0 gives check digit 0, not 10
+    DigitTwelth = (10 - counter%10) % 10
     return DigitTwelth    
 
 print(ISBN("978030640615"))
